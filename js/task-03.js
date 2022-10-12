@@ -24,3 +24,4 @@ images.forEach((image) => {
     .join("");
 });
 listPicRef.insertAdjacentHTML("afterbegin", temp);
+listPicRef.style.listStyle = "none";
