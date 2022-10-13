@@ -16,3 +16,4 @@ const incrimentFn = () => {
 
 btnDecriment.addEventListener("click", decrimentFn);
 btnIncriment.addEventListener("click", incrimentFn);
+// sdfsdfsdfsd
