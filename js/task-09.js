@@ -10,6 +10,7 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 function changeColorFn() {
-  bodyRef.style.background = `${getRandomHexColor()}`;
-  spanRef.textContent = `${getRandomHexColor()}`;
+  const randomColorRef = getRandomHexColor();
+  bodyRef.style.background = randomColorRef;
+  spanRef.textContent = randomColorRef;
 }
