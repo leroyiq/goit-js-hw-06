@@ -12,6 +12,7 @@ function getCurrentInputValue(event) {
 
 function createBoxes(amount) {
   conteinerRef.innerHTML = "";
+  const insert = [];
   amount = Number(inputRef.value);
   for (let i = 0; i < amount; i += 1) {
     const box = document.createElement("div");
@@ -20,8 +21,10 @@ function createBoxes(amount) {
     box.style.backgroundColor = `${getRandomHexColor()}`;
 
     box.style.marginTop = "20px";
-    conteinerRef.appendChild(box);
+
+    insert.push(conteinerRef.appendChild(box));
   }
+  conteinerRef.append(...insert);
 }
 
 destroyBtnRef.addEventListener("click", destroyAllBoxes);
