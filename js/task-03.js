@@ -15,13 +15,13 @@ const images = [
 
 const listPicRef = document.querySelector(".gallery");
 let temp = "";
-images.forEach((image) => {
-  temp = images
-    .map(
-      (image) =>
-        `<li class="gallery__item"><img class="gallery__img" src="${image.url}" alt="${image.alt}"></li>`
-    )
-    .join("");
-});
+
+temp = images
+  .map(
+    (image) =>
+      `<li class="gallery__item"><img class="gallery__img" src="${image.url}" alt="${image.alt}"></li>`
+  )
+  .join("");
+
 listPicRef.insertAdjacentHTML("afterbegin", temp);
 listPicRef.style.listStyle = "none";
